@@ -5,13 +5,13 @@ include { ARCASHLA_EXTRACT } from './modules/nf-core/extract/main.nf'
 // include { HLAGENOTYPE } from './modules/nf-core/hlagenotype'
 
 // Define your input BAM file
-bam_file = file('/dataset/test.bam')
+ bam_file = file('./test.bam')
 
 // Define the output directory
-output_dir = '/dataset/test/output'
+output_dir = './dataset/test/output'
 
 // Define the alleles for genotyping
-// alleles = 'A,B,C,DPB1,DQB1,DQA1,DRB1'
+ alleles = 'A,B,C,DPB1,DQB1,DQA1,DRB1'
 
 workflow {
     // Extract reads from BAM file
